@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=PT+Serif&display=swap');
+
+.container {
+  padding: 30px;
+  text-align: center;
+}
+
+.aboutMeText {
+  margin: 0 auto;
+  width: fit-content;
+  font-family: 'Indie Flower', cursive;
+  font-size: 2.5rem;
+}
+
+.subContainer {
+  display: flex;
+  margin: 0 auto;
+  width: 550px;
+}
+
+.imageInfo {
+  flex-basis: 50%;
+  padding: 50px 20px;
+
+  & img{
+    border-radius: 50%;
+    width: 50%;
+    height: auto;
+  }
+
+  & figCaption {
+    font-family: 'PT Serif', serif;
+  }
+}
+
+.aboutMeParah {
+  flex-basis: 50%;
+}
