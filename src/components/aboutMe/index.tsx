@@ -19,7 +19,6 @@ const AboutMe = () => {
 
         </article>
       </section>
-      
     </div>
   )
 }
