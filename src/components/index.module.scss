@@ -1,0 +1,26 @@
+.container {
+  background: url('../assets/images/banner.png') no-repeat center fixed;
+  background-size: cover;
+  min-height: 470px;
+  color: #fff;
+  padding: 10px;
+}
+
+.navBar {
+  padding: 20px;
+}
+
+.myName {
+  font-size: 16px;
+  letter-spacing: 6px;
+}
+
+@media screen and (min-width: 768px) {
+  .myName {
+    font-size: 25px;
+  }
+
+  .container {
+    min-height: 600px;
+  }
+}

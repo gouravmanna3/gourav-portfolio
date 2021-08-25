@@ -21,6 +21,7 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "./src/**/*.ts", 
-    "src/assets/utils/firebase.ts"  ]
+    "./src/**/*.ts",
+    "src/assets/utils/firebase.ts"
+  ]
 }

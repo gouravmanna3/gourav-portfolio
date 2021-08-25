@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=PT+Serif&display=swap');
 
+
+$margin: 5vw;
+
 .introContainer {
   margin: 0 auto;
   max-width: 600px;
   text-align: center;
-  margin-top: 6rem;
+  margin-top: 12vw;
   font-family: 'Noto Sans', sans-serif;
 }
 
 .helloWorld {
-  font-size: 6em;
+  font-size: 12vw;
   text-shadow: 0 1px 0 #ccc,
   0 2px 0 #c9c9c9,
   0 3px 0 #bbb,
@@ -25,7 +28,7 @@
 }
 
 .frontEnd {
-  font-size: 2em;
+  font-size: 8vw;
   margin-top: 15px;
   font-family: 'PT Serif', serif;
 }
@@ -35,11 +38,30 @@
   padding: 16px 20px;
   cursor: pointer;
   color: #fff;
-  margin: 5rem 2rem;
+  margin: 4rem;
   box-shadow: 0px 0px 15px 0px rgba(228, 223, 223, 0.835);
   
 }
 
 .btn:hover {
   box-shadow: 0px 0px 20px 5px rgba(228, 223, 223, 0.835);
+}
+
+@media screen and (min-width: 768px) {
+  .introContainer {
+    margin-top: 7vw;
+  }
+
+  .helloWorld {
+    font-size: $margin;
+  }
+
+  .frontEnd {
+    font-size: 2vw;
+  }
+
+  .btn {
+    margin: $margin;
+  }
+
 }
