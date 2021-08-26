@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=PT+Serif&family=Rampart+One&display=swap');
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.readingIcon {
+  font-size: 2em;
+}
+
+.educationContainer {
+  flex-basis: 50%;
+}
+
+.educationHeader {
+  border-left: 5px solid red;
+  padding: 0.5rem 1.5rem;
+}
+
+.myEducationText {
+  font-family: 'Indie Flower', cursive;
+  font-size: 40px; 
+}
+
+.educationList {
+  margin-top: 2vw;
+
+  & div {
+    padding: 12px 0;
+
+    &:nth-child(odd) {
+      background-color: #E8E8E8;
+    }
+
+    & h4 {
+      font-size: 22px;
+    }
+
+    & p {
+      font-size: 16px;
+      padding: 5px 0;
+    }
+  }
+}

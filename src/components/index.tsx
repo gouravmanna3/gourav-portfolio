@@ -1,6 +1,7 @@
 import React from 'react';
 import Intro from './Intro';
 import AboutMe from './aboutMe';
+import EducationExperience from './educationExperience';
 
 import styles from './index.module.scss';
 
@@ -14,6 +15,7 @@ const MainContainer = () => {
         <Intro />
       </div>
      <AboutMe />
+     <EducationExperience />
     </div>
   )
 }
