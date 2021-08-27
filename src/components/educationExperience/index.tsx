@@ -27,7 +27,7 @@ const EducationExperience = () => {
           </div>
         </div>
       </article>
-      <article>
+      <article className={styles.experienceContainer}> 
         <FontAwesomeIcon icon={faLaptopCode} className={styles.readingIcon} />
       </article>
 

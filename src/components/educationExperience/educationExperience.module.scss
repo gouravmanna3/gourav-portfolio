@@ -1,37 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=PT+Serif&family=Rampart+One&display=swap');
 
 .container {
+  background: url('../../assets//images/banner.png') no-repeat center fixed;
+  background-size: cover;
   display: flex;
   flex-wrap: wrap;
   padding: 30px;
+  color: #e5e5e5;
 }
 
 .readingIcon {
-  font-size: 2em;
+  font-size: 3em;
+  color: #f8961e;
 }
 
 .educationContainer {
-  flex-basis: 50%;
+  flex-basis: 100%;
 }
 
 .educationHeader {
-  border-left: 5px solid red;
+  border-left: 5px solid #f8961e;
   padding: 0.5rem 1.5rem;
 }
 
 .myEducationText {
   font-family: 'Indie Flower', cursive;
-  font-size: 40px; 
+  font-size: 40px;
+  font-weight: 600;
 }
 
 .educationList {
-  margin-top: 2vw;
+  margin-top: 25px;
 
   & div {
-    padding: 12px 0;
+    padding: 20px 10px;
+    border: 1px solid white;
+    margin: 20px 0;
+    align-items: center;
+    min-height: 11vh;
+    display: grid;
+    border-radius: 5px;
+    box-shadow: 8px 6px 14px 2px rgba(228, 223, 223, 0.835);
+    transition: all 3s linear;
 
     &:nth-child(odd) {
-      background-color: #E8E8E8;
+     
     }
 
     & h4 {
@@ -39,8 +52,18 @@
     }
 
     & p {
-      font-size: 16px;
+      font-size: 18px;
       padding: 5px 0;
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .educationContainer {
+    flex-basis: 50%;
+  }
+
+  .experienceContainer {
+    flex-basis: 50%;
   }
 }
