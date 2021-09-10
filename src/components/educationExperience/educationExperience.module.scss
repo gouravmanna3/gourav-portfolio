@@ -29,31 +29,101 @@
   font-weight: 600;
 }
 
-.educationList {
-  margin-top: 25px;
+.timeline {
+  display: flex;
+  flex-direction: column;
+  margin: 5% 0;
+  margin-left: 4rem;
 
-  & div {
-    padding: 20px 10px;
-    border: 1px solid white;
+  & .education {
+    background: #fff;
+    position: relative;
+    display: flex;
     margin: 20px 0;
-    align-items: center;
-    min-height: 11vh;
-    display: grid;
-    border-radius: 5px;
-    box-shadow: 8px 6px 14px 2px rgba(228, 223, 223, 0.835);
-    transition: all 3s linear;
+    border-radius: 8px;
+    flex-wrap: wrap;
 
-    &:nth-child(odd) {
-     
+    & .educationYear {
+      border-radius: 8px 8px 0 0;
+      background: #24b47e;
+      display: flex;
+      align-items: center;
+      flex-basis: 100%;
+      color: #9251ac;
+      padding: 15px;
+
+      & .icon {
+        position: absolute;
+        top: 50%;
+        left: -66px;
+        font-size: 1.6rem;
+        transform: translateY(-50%);
+        color: #24b47e;
+      }
+
+      & div {
+        color: #aff1b6;
+        font-size: 20px;
+        font-weight: 700;
+        white-space: nowrap;
+      }
     }
 
-    & h4 {
-      font-size: 22px;
+    & .content {
+      padding: 20px;
+      flex-basis: 100%;
+
+      & .title {
+        font-size: 1.2rem;
+        line-height: 1.4;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: #9251ac;
+        letter-spacing: 1.5px;
+      }
     }
 
-    & p {
-      font-size: 18px;
-      padding: 5px 0;
+    & .school {
+      flex-basis: 100%;
+
+      p {
+        color: black;
+      }
+    }
+
+    &::before {
+      content: "";
+      width: 3rem;
+      height: 3rem;
+      position: absolute;
+      background: #aff1b6;
+      border-radius: 100%;
+      left: -5rem;
+      top: 50%;
+      transform: translateY(-50%);
+      border: 2px solid #24b47e;
+    }
+
+    &::after {
+      content: "";
+      width: 2px;
+      height: 100%;
+      background: #f8961e;
+      position: absolute;
+      top: 66%;
+      left: -3.5rem;
+    }
+
+    &:last-child {
+
+      &:after {
+        content: none;
+      }
+
+      & .icon {
+        left: -70px;
+      }
     }
   }
 }
@@ -65,5 +135,26 @@
 
   .experienceContainer {
     flex-basis: 50%;
+  }
+
+  .timeline {
+    margin-left: 5rem;
+
+    & .education {
+      flex-wrap: nowrap;
+      max-width: 565px;
+      box-shadow: 0 0 2px #fff, 0 0 10px #fff, 0 0 20px #0ba9ca, 0 0 30px #0ba9ca;
+
+      & .educationYear {
+        border-radius: 8px 0 0 8px;
+        justify-content: center;
+        flex-basis: 25%;
+      }
+
+      & .content {
+        flex-basis: 60%;
+      }
+
+    }
   }
 }
