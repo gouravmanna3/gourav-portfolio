@@ -64,6 +64,22 @@ const EducationExperience = () => {
           <FontAwesomeIcon icon={faLaptopCode} className={styles.readingIcon} />
           <p className={styles.myEducationText}>My Experience</p>
         </div>
+        <div className={styles.experienceTimeline}>
+          <div className={styles.entry}>
+            <div className={styles.title}>
+              <h3>2020 - Present</h3>
+              <p>Associate Software Engineer, Intralinks</p>
+            </div>
+            <div className={styles.body}>
+              <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis.</p>
+              <ul>
+                <li>Rerum sit libero possimus amet excepturi</li>
+                <li>Exercitationem enim dolores sunt praesentium dolorum praesentium</li>
+                <li>Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </article>
 
     </section>
