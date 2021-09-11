@@ -60,7 +60,10 @@ const EducationExperience = () => {
         </div>
       </article>
       <article className={styles.experienceContainer}> 
-        <FontAwesomeIcon icon={faLaptopCode} className={styles.readingIcon} />
+        <div className={styles.educationHeader}>
+          <FontAwesomeIcon icon={faLaptopCode} className={styles.readingIcon} />
+          <p className={styles.myEducationText}>My Experience</p>
+        </div>
       </article>
 
     </section>
