@@ -67,18 +67,33 @@ const EducationExperience = () => {
         <div className={styles.experienceTimeline}>
           <div className={styles.entry}>
             <div className={styles.title}>
-              <h3>2020 - Present</h3>
+              <h3>Jan, 2020 - Present</h3>
               <p>Associate Software Engineer, Intralinks</p>
             </div>
             <div className={styles.body}>
-              <p>Voluptatibus veniam ea reprehenderit atque reiciendis non laborum adipisci ipsa pariatur omnis.</p>
+              <p>Worked as ReactJs developer for a fintech product of Intralinks</p>
               <ul>
-                <li>Rerum sit libero possimus amet excepturi</li>
-                <li>Exercitationem enim dolores sunt praesentium dolorum praesentium</li>
-                <li>Modi aut dolores dignissimos sequi sit ut aliquid molestias deserunt illo</li>
+                <li>Building components for the designs using React, Redux and Typescript.</li>
+                <li>Key contributor and took ownership of a key feature built using React and Redux.</li>
+                <li>Writing unit test cases for the designed components using Jest.</li>
               </ul>
             </div>
           </div>
+
+          <div className={styles.entry}>
+            <div className={styles.title}>
+              <h3>Jan, 2019 - Apr, 2019</h3>
+              <p>Intern, Cognizant Technology Solutions</p>
+            </div>
+            <div className={styles.body}>
+              <p>Did an internship on Java Full Stack Development</p>
+              <ul>
+                <li>Built a dummy project using Angular and Java</li>
+                <li>Key contributor in designing the user interface of the project</li>
+              </ul>
+            </div>
+          </div>
+
         </div>
       </article>
 
